@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Hello World</title>
+	</head>
+	<body>
+		<h1>Hello world!</h1>
+		<p>
+			<form id="hello" method="POST">
+				{% csrf_token %}
+				{{ form }}
+				<input type="submit" value='Say "Hello"'>
+			</form>
+		</p>
+		<p>
+			{{ msg }}
+		</p>
+		<p>
+			Rate this greeting: ☆ ☆ ☆ ☆ ☆
+		</p>
+
+	</body>
+</html>
